@@ -1,0 +1,211 @@
+:root {
+  --clr-primary-hsl-700: 219, 29%, 14%;
+  --clr-primary-hsl-600: 217, 19%, 35%;
+  --clr-primary-hsl-300: 210, 46%, 95%;
+  --clr-primary-hsl-200: 0, 0%, 81%;
+  
+  --clr-neutral-hsl-100: 0, 0%, 100%;
+  
+  --clr-accent-hsl: 263, 55%, 52%;
+  
+  --clr-primary-200: hsl(var(--clr-primary-hsl-200));
+  --clr-primary-300: hsl(var(--clr-primary-hsl-300));
+  --clr-primary-600: hsl(var(--clr-primary-hsl-600));
+  --clr-primary-700: hsl(var(--clr-primary-hsl-700));
+  
+  --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+  
+  --clr-accent: hsl(var(--clr-accent-hsl));
+  
+  -ff-body: "Barlow Semi Condensed", sans-sarif;
+  
+  --fw-regular: 500;
+  --fw-semi-bold: 600;
+  
+  --fs-400: 1.0525rem;
+  --fs-600: 1.4rem;
+  --fs-700: 1.62rem;
+}
+
+/* Css Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+p,
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+/* Typography */
+body {
+  background-color: var(--clr-primary-300);
+  font-family: var(--ff-body);
+}
+
+h1 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-semi-bold)
+}
+
+h2,
+p {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+}
+
+@media (min-width: 50em) {
+  h1 {
+    font-size: var(--fs-600);
+  }
+}
+
+/* Utilities */
+.container {
+  padding: 0 2rem;
+  max-width: 90rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.grid-flow {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.clr-white-lighter {
+  color: hsl(var(--clr-neutral-hsl-100), 0.5);
+}
+
+.clr-white-light {
+  color: hsla(var(--clr-neutral-hsl-100), 0.7);
+}
+
+.clr-white-regular {
+  color: var(--clr-neutral-100);
+}
+
+.clr-gray-lighter {
+  color: hsl(var(--clr-primary-hsl-700), 0.5);
+}
+
+.clr-gray-light {
+  color: hsla(var(--clr-primary-hsl-700), 0.7);
+}
+
+.clr-gray-regular {
+  color: var(--clr-primary-700);
+}
+
+/* Testimonials */
+.testimonies {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.testimony {
+  padding: 1.625rem 2.0625rem;
+  border-radius: 6px;
+}
+
+.testimony-one {
+  background-color: var(--clr-accent);
+  position: relative;
+  isolation: isolate;
+}
+
+.testimony-one::before {
+  content: "";
+  background-image: url(/images/bg-pattern-quotation.svg);
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 0 61%;
+  background-size: 100px;
+  background-repeat: no-repeat
+}
+
+.testimony-two {
+  background-color: var(--clr-primary-600);
+}
+
+.testimony-three,
+.testimony-five {
+  background-color: var(--clr-neutral-100);
+}
+
+.testimony-four {
+  background-color: var(--clr-primary-700);
+}
+
+@media (min-width: 50em) {
+  .testimonies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimony-one {
+    grid-column: 1/3;
+  }
+
+  .testimony-two {
+    grid-column: 3/4;
+  }
+
+  .testimony-three {
+    grid-column: 1/2;
+  }
+
+  .testimony-four {
+    grid-column: 2/4;
+  }
+
+  .testimony-five {
+      grid-column: 4/5;
+      grid-row: 1/3;
+  }
+}
+
+/* Avater */
+.avator {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.avator-one {
+  border: 1.5px solid hsl(263, 55%, 60%);
+}
+
+.avator-two {
+    border: 1.5px solid hsl(217, 19%, 40%);
+}
+
+.avator-three,
+.avator-five {
+    border: 1.5px solid hsl(0, 0%, 90%);
+}
+
+.avator-four {
+    border: 1.5px solid hsl(263, 55%, 60%);
+}
