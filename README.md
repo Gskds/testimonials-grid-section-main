@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/Gskds/testimonials-grid-section-main.git)
-- Live Site URL: [live site](https://your-live-site-url.com)
+  - Live Site URL: [live site](https://app.netlify.com/teams/gskds/builds/644e3013252c972fe967d0d6)
 
 ## My process
 
