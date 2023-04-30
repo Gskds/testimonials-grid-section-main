@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repository](https://github.com/Gskds/testimonials-grid-section-main.git)
+- Live Site URL: [live site](https://your-live-site-url.com)
 
 ## My process
 
@@ -54,8 +54,7 @@ I want to advance my knowledge on positioning pseudo element. For example positi
 
 ### Useful resources
 
-- [Resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Resource](https://youtu.be/rg7Fvvl3taU) 
 
 ## Author
 
